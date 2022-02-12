@@ -1,0 +1,155 @@
+/**
+ * Base styles 
+ */
+
+:root {
+  --font-family-primary: sans-serif;
+  --background-color-body: #F8F9FF;
+  --background-color-shapes: #172755;
+  --background-color-contrasted: #EF2A82;
+  
+  --border-radius-desktop: 30px;
+  --border-radius-mobile: 17px;
+  --border-radius-button: 68px;
+}
+    
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: var(--font-family-primary);
+  font-size: 16px;
+}
+
+body {
+  background: var(--background-color-body);
+}
+
+h1 {
+  
+}
+
+h2 {
+  
+}
+
+h3 {
+  
+}
+
+h4 {
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-mobile);
+}
+
+a {
+  text-decoration: none;
+}
+
+p{
+  
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/**
+ * Layout
+ */
+.wrapper {
+  max-width: 1632px;
+  margin: 0 auto;
+  padding: 3.45rem 2rem 4.75rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: ;
+}
+
+/**
+ * Watermarks
+ */
+.watermark {
+  display: none;
+}
+
+/**
+ * Paragraphs
+ */
+.paragraph {
+  
+}
+
+/**
+ * Buttons
+ */
+
+.button {
+
+}
+
+/**
+ * Navigation block
+ */
+.navigation {
+  display: flex;
+}
+
+/**
+ * Hero block
+ */
+hero {
+  display: flex;
+}
+
+.hero-text {
+  
+}
+
+/**
+ * Illustrated block
+ */
+.illustrated {
+  display: flex;
+}
+
+/**
+ * Feature block
+ */
+.feature {
+  
+}
+
+/**
+ * Pricing block
+ */
+.pricing {
+  
+}
+
+/**
+ * Pricing Plan block
+ */
+
+.pricing-plan {
+  display: flex;
+}
+
+/*promoted*/
+
+
+
+
