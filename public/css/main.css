@@ -7,6 +7,7 @@
   --background-color-body: #F8F9FF;
   --background-color-shapes: #172755;
   --background-color-contrasted: #EF2A82;
+  --cards-color-mobile: #FFFFFF;
   
   --text-color-primary: #8794BA;
   --text-color-secondary: #8794BA;
@@ -17,10 +18,10 @@
   --base-spacing: 2rem;
   --fluid-spacing: calc(100vw * var(--tan-base-deg));
   --content-spacing: calc(var(--content-width) * var(--tan-base-deg) / 2);
-  --content-padding: 1rem;
+  --content-padding: 1.2rem;
   --border-width: 1rem;
   
-  --border-radius-desktop: 30px;
+  --border-radius-primary: 30px;
   --border-radius-mobile: 17px;
   --border-radius-button: 68px;
 }
@@ -158,7 +159,10 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: ;
+  min-height: 4.2rem;
+  margin: -1.2rem -1.2rem 1.2rem;
+  padding: 0 1.2rem;
+  box-shadow: 0px 4px 4px #12214D;
 }
 
 .header__logo {
@@ -176,6 +180,11 @@ ul {
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem 0 -1.2rem;
+  min-height: 7.5rem;
+  font-size: 1.4rem;
+  border-top: 1px solid #2A407C;
 }
 
 .footer__logo {
@@ -184,6 +193,14 @@ ul {
 
 .footer__navigation {
   display: none;
+}
+
+.footer__widgets {
+  display: flex;
+}
+
+.fa-twitter {
+  margin: 0 2.4rem;
 }
 
 /**
@@ -220,6 +237,10 @@ ul {
   border: 1px solid #465b95;
 }
 
+.button_borderless {
+  color: var(--text-color-primary);
+}
+
 /**
  * Navigation block
  */
@@ -237,11 +258,11 @@ ul {
 }
 
 .hero__text {
-  max-width: 21.5rem;
+  max-width: 21rem;
 }
 
 .hero__chart_primary {
-  max-width: 21.5rem;
+  max-width: 21rem;
 }
 
 .hero__chart_secondary {
@@ -276,7 +297,7 @@ ul {
 
 .pricing__plans {
   display: flex;
-  overflow: hidden;
+  justify-content: center;
 }
 
 /**
@@ -286,10 +307,19 @@ ul {
 .pricing-plan {
   display: flex;
   flex-direction: column;
+  min-width: 17.5rem;
+  min-height: 23rem;
+  text-align: center;
+  padding: 2.5rem 2.3rem 4rem;
+  background-color: var(--cards-color-mobile);
+  border-radius: var(--border-radius-primary);
+  box-shadow: 0px 18px 50px -15px #060F28;
 }
 
 /*promoted*/
-
+.pricing-plan_promoted {
+  margin: 0 1.25rem;
+}
 
 
 
