@@ -56,11 +56,11 @@ h1 {
 }
 
 h2 {
-  
+  font-size: 1.87rem
 }
 
 h3 {
-  
+  font-size: 1rem;
 }
 
 h4 {
@@ -160,7 +160,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   min-height: 4.4rem;
-  margin: 0 -1.2rem 1.2rem;
+  margin: 0 -1.2rem 1.75rem;
   padding: 0 1.2rem;
   box-shadow: 0px 4px 4px #12214D;
 }
@@ -271,41 +271,42 @@ ul {
 
 }
 
-/*
+
 .hero__text {
-  max-width: 21rem;
+  
+}
+
+.hero__heading {
+  margin: 0 auto 1.2rem;
+}
+
+.hero__description {
+  margin-bottom: 1.75rem;
 }
 
 .hero__chart_primary {
-  max-width: 21rem;
+  margin-bottom: 1.5rem;
 }
-*/
+
 
 .hero__chart_secondary {
   display: none;
 }
 
 /**
- * Illustrated block
+ * Features block
  */
-.illustrated {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-
+.features {
+  
 }
 
-.illustrated_reverse {
-  flex-direction: column-reverse;
-}
-
-.illustrated__heading {
-  color: var(--text-color-secondary);
+.features__header {
+  margin-bottom: 2.6rem;
 }
 
 .features__heading {
   color: var(--text-color-secondary);
+  margin-bottom: 1.4rem;
 }
 
 /**
@@ -331,6 +332,30 @@ ul {
   margin-bottom: 0.7rem;
 }
 
+
+/**
+ * Illustrated block
+ */
+.illustrated {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 3.75rem;;
+}
+
+.illustrated_reverse {
+  flex-direction: column-reverse;
+}
+
+.illustrated__heading {
+  color: var(--text-color-secondary);
+  margin-bottom: 1.25rem;
+}
+
+.illustrated__description {
+  margin-bottom: 1.88rem;
+}
+
 /**
  * Pricing block
  */
@@ -338,8 +363,13 @@ ul {
   
 }
 
+.pricing__header {
+  margin-bottom: 3.7rem;
+}
+
 .pricing__heading {
   color: var(--text-color-contrasted);
+  margin-bottom: 1.25rem;
 }
 
 .pricing__plans {
