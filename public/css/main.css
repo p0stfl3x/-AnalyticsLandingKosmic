@@ -25,9 +25,6 @@
   --border-radius-mobile: 17px;
   --border-radius-button: 68px;
 }
-
-
-
     
 * {
   box-sizing: border-box;
@@ -51,12 +48,14 @@ body {
 }
 
 h1 {
-  color: var(--text-color-contrasted);
   font-size: 1.93rem;
+  line-height: 1.2;
+  color: var(--text-color-contrasted);
 }
 
 h2 {
-  font-size: 1.87rem
+  font-size: 1.87rem;
+  line-height: 1.17;
 }
 
 h3 {
@@ -166,29 +165,43 @@ ul {
 }
 
 .header__logo {
-  max-width: 130px;
+  max-width: 8.75rem;
 }
 
 .header__navigation_desktop {
   display: none;
 }
 
+.header__buttons {
+  display: flex;
+  align-items: center;
+  margin-right: -0.5rem;
+}
+
+.header__sign-in.button {
+  padding: 0.5rem;
+}
+
 .header__sign-up.button {
   display: none;
+}
+
+.header__navigation_mobile.button {
+  font-size: 1.7rem;
+  padding: 0.5rem;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2.5rem 0 0;
   min-height: 7.5rem;
   font-size: 1.4rem;
   border-top: 1px solid #2A407C;
 }
 
 .footer__logo {
-  max-width: 130px;
+  max-width: 8.75rem;
 }
 
 .footer__navigation {
@@ -200,8 +213,12 @@ ul {
 }
 
 .fa-twitter {
-  margin: 0 2.4rem;
+  margin: 0 2.5rem;
 }
+
+/**
+ * Navigation block
+ */
 
 /**
  * Watermarks
@@ -222,7 +239,13 @@ ul {
  * Paragraphs
  */
 .paragraph {
-  
+  font-size: 0.87rem;
+  line-height: 1.22rem;
+}
+
+.paragraph_larger {
+  font-size: 1.12rem;
+  line-height: 1.69rem;
 }
 
 /**
@@ -231,6 +254,7 @@ ul {
 .button {
   display: block;
   text-align: center;
+  line-height: 1.17;
   border: 1px solid transparent;
   border-radius: var(--border-radius-button);
   padding: 1rem;
@@ -254,13 +278,6 @@ ul {
 }
 
 /**
- * Navigation block
- */
-.navigation {
-  
-}
-
-/**
  * Hero block
  */
 .hero {
@@ -268,29 +285,38 @@ ul {
   flex-direction: column-reverse;
   align-items: center;
   margin: 0 auto;
-
 }
-
 
 .hero__text {
   
 }
 
 .hero__heading {
-  margin: 0 auto 1.2rem;
+  max-width: 21rem;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
 }
 
 .hero__description {
   margin-bottom: 1.75rem;
 }
 
+.hero__description-additional {
+  display: none;
+}
+
 .hero__chart_primary {
   margin-bottom: 1.5rem;
 }
 
-
 .hero__chart_secondary {
   display: none;
+}
+
+@media only screen and (max-width: 374px) {
+  .hero__heading {
+    max-width: 21rem;
+  }
 }
 
 /**
@@ -329,6 +355,7 @@ ul {
 
 .feature__name {
   color: var(--text-color-secondary);
+  line-height: 1.17;
   margin-bottom: 0.7rem;
 }
 
@@ -360,11 +387,11 @@ ul {
  * Pricing block
  */
 .pricing {
-  
+  margin-bottom: 2.5rem
 }
 
 .pricing__header {
-  margin-bottom: 3.7rem;
+  margin-bottom: 3.5rem;
 }
 
 .pricing__heading {
@@ -396,6 +423,7 @@ ul {
 
 .pricing-plan__name {
   font-size: 1.56rem;
+  line-height: 1.17;
   color: var(--text-color-secondary);
   margin-bottom: 0.5rem;
 }
