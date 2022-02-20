@@ -294,6 +294,30 @@ ul {
   line-height: 1.69rem;
 }
 
+.paragraph_smaller {
+
+}
+
+@media only screen and (min-width: 560px) {
+  .paragraph {
+    font-size: 1rem;
+  }
+  
+  .paragraph_smaller{
+    font-size: 0.94rem;
+  }
+}
+  
+@media only screen and (min-width: 680px) {
+  .paragraph {
+    font-size: 1.12rem;
+  }
+  
+  .paragraph_smaller{
+    font-size: 1rem;
+  }
+}
+
 /**
  * Buttons
  */
@@ -527,7 +551,7 @@ ul {
   }
   
   .illustrated__heading {
-    margin: 0 -0.5rem 1.25rem;
+    margin: 0 auto 1.25rem;
   }
 }
 
@@ -559,6 +583,14 @@ ul {
     margin: 0 auto 3.5rem;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .pricing__plans {
+    justify-content: space-between;
+  }
+}
+
+
 
 /**
  * Pricing Plan block
@@ -612,5 +644,12 @@ ul {
   margin: 0 1.25rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .pricing-plan {
+    min-width: 13.5rem;
+    max-width: 19rem;
+    flex-grow: 1;
+  }
+}
 
 
