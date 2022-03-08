@@ -43,7 +43,7 @@ html {
 
 body {
   background: var(--background-color-body);
-  overflow-x: hidden;
+  
 }
 
 h1 {
@@ -129,6 +129,7 @@ ul {
   margin: 0;
   position: relative;
   color: var(--text-color-primary);
+  overflow-x: hidden;
 }
 
 .container__content {
@@ -152,10 +153,21 @@ ul {
 }
 
 .container_primary_top {
-  background-color: var(--background-color-contrasted);
+  background-color: transparent;
   color: var(--text-color-primary);
   padding-bottom: calc(var(--fixed-spacing) + var(--fluid-cut-height));
   margin-bottom: calc(var(--fixed-spacing) - var(--border-width));
+}
+
+.container_primary_top::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color-contrasted);
   clip-path: polygon(
     0 0, 
     100% 0, 
@@ -164,7 +176,8 @@ ul {
   );
 }
 
-.container_primary_top::before {
+
+.container_primary_top::after {
   content: '';
   display: block;
   position: absolute;
@@ -183,10 +196,20 @@ ul {
 }
 
 .container_primary_bottom {
-  background-color: var(--background-color-contrasted);
   color: var(--text-color-primary);
   padding-top: calc(var(--fixed-spacing) + var(--fluid-cut-height));
   margin-top: calc(var(--fixed-spacing) - var(--border-width));
+}
+
+.container_primary_bottom::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color-contrasted);
   clip-path: polygon(
     0 var(--fluid-cut-height), 
     100% 0, 
@@ -633,6 +656,7 @@ ul {
     position: relative;
     max-width: 50%;
     margin: 0 -7rem 0 0;
+    z-index: 4;
   }
   
   .hero__chart_primary {
@@ -645,7 +669,7 @@ ul {
   
   .hero__chart_secondary {
     position: absolute;
-    z-index: 3;
+    z-index: 4;
     display: inline;
     top: 22%;
     right: 50%;
@@ -847,7 +871,7 @@ ul {
  * Pricing block
  */
 .pricing {
-  margin-bottom: 2.5rem
+  margin-bottom: 2.5rem;
 }
 
 .pricing__header {
@@ -863,7 +887,7 @@ ul {
   display: flex;
   justify-content: center;
   margin: 0 -1.2rem;
-  overflow: hidden;
+  
 }
 
 @media only screen and (min-width: 640px) {
