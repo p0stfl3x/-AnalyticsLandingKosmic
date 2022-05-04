@@ -106,7 +106,6 @@ ul {
 .wrapper {
   max-width: var(--container-width);
   margin: 0 auto;
-  position: relative;
   padding: var(--content-padding-mobile);
 }
 
@@ -318,9 +317,7 @@ ul {
   
   .header__navigation {
     display: flex;
-    position: relative;
-    z-index: 3;
-    margin-right: 7rem;
+    margin-right: 6rem;
   }
   
   .header__buttons {
@@ -393,8 +390,6 @@ ul {
   }
   
   .footer__navigation {
-    position: relative;
-    z-index: 3;
     display: flex;
     font-size: 0.87rem;
   }
@@ -576,8 +571,6 @@ ul {
   }
   
   .hero__illustration_primary {
-    position: relative;
-    z-index: 3;
     margin-bottom: 0;
     max-width: 50rem;
     overflow: hidden;
@@ -594,10 +587,6 @@ ul {
 
 @media only screen and (min-width: 1024px) and (max-width: 1130px) {
   .hero__illustration_secondary {
-    position: absolute;
-    z-index: 3;
-    display: inline;
-    top: 22%;
     right: 35%;
   }
 }
