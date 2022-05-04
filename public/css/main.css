@@ -68,42 +68,12 @@ h2 {
     font-size: 1.5rem;
   }
 }
-/*
-
-@media only screen and (min-width: 480px) {
-  h2 {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (min-width: 520px) {
-  h2 {
-    font-size: 2.1rem;
-  }
-}
-*/
 
 @media only screen and (min-width: 560px) {
   h2 {
     font-size: 2.2rem;
   }
 }
-/*
-
-@media only screen and (min-width: 600px) {
-  h2 {
-    font-size: 2.3rem;
-  }
-}
-
-@media only screen and (min-width: 640px) {
-  h2 {
-    margin: 0 auto 1.4rem;
-    margin: 0 auto 1.4rem;
-    font-size: 2.4rem;
-  }
-}
-*/
 
 @media only screen and (min-width: 680px) {
   h2 {
@@ -263,7 +233,7 @@ ul {
     background-image: url(../assets/logos/background-logo.svg);
     background-size: 2010px;
     background-repeat: no-repeat;
-    background-position: calc(50% + 50rem) calc(50% + 38rem);
+    background-position: calc(50% + 50rem) calc(50% + 37rem);
   }
 }
 
@@ -284,7 +254,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   margin: 0 0 1.75rem;
-  padding: 0.6rem 1.2rem;
+  padding: 0.6rem var(--content-padding-mobile);
   z-index: 3;
   box-shadow: 0px 4px 4px #12214D;
 }
@@ -326,7 +296,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin: 0 0 1.75rem;
-    padding: 0.6rem var(--content-padding-tablets);
+    padding: 1rem var(--content-padding-tablets);
     box-shadow: 0 4px 4px #12214D;
   }
 
@@ -380,7 +350,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
-  padding: 2.8rem 0;
+  padding: 3rem var(--content-padding-mobile);
   border-top: 1px solid #2A407C;
 }
 
@@ -406,10 +376,15 @@ ul {
   }
 }
 
+@media only screen and (min-width: 640px) {
+  .footer {
+    padding: 2.8rem var(--content-padding-tablets);
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .footer {
-
-    padding: 4.4rem 0;
+    padding: 4.4rem var(--content-padding-desktop);
     margin-bottom: 2rem;
   }
   
@@ -533,36 +508,6 @@ ul {
   position: absolute;
   display: none;
 }
-
-/*
-@media only screen and (min-width: 400px) {
-  .hero__heading {
-    max-width: 24rem;
-    font-size: 2.15rem;
-  }
-}
-
-@media only screen and (min-width: 440px) {
-  .hero__heading {
-    max-width: 26rem;
-    font-size: 2.3rem;
-  }
-}
-
-@media only screen and (min-width: 480px) {
-  .hero__heading {
-    max-width: 28rem;
-    font-size: 2.5rem;
-  }
-}
-
-@media only screen and (min-width: 520px) {
-  .hero__heading {
-    max-width: 30rem;
-    font-size: 2.7rem;
-  }
-}
-*/
 
 @media only screen and (min-width: 560px) {
   .hero__heading {
