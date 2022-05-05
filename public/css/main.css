@@ -93,6 +93,12 @@ img {
 a {
   text-decoration: none;
   color: var(--text-color-primary);
+  transition-property: all;
+  transition-duration: 350ms;
+}
+
+a:hover {
+  filter: brightness(1.1);
 }
 
 ul {
@@ -367,8 +373,8 @@ ul {
 }
 
 @media only screen and (max-width: 374px) {
-  .fa-twitter {
-    margin: 0 1.5rem;
+  .fa-brands {
+    margin: 1.5rem;
   }
 }
 
@@ -449,6 +455,8 @@ ul {
   border: 1px solid transparent;
   border-radius: var(--border-radius-button);
   padding: 1rem;
+  transition-property: filter;
+  transition-duration: 350ms;
 }
 
 .button_promoted {
