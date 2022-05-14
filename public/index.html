@@ -53,19 +53,15 @@
         </div>
 
         <div class="hero__illustrations">
-          <img 
-            class="hero__illustration_primary illustration" 
-            srcset="assets/charts/chart-2.webp,
-                    assets/charts/chart-2@x2.webp 2x"
-            src="assets/charts/chart-2.webp"
-            alt=""
-          />
+          <picture>
+            <source media="(max-width: 599px)" srcset="assets/charts/chart-2.webp" />
+            <source media="(min-width: 600px)" srcset="assets/charts/chart-2@x2.webp" />
+            <img class="hero__illustration_primary illustration" src="assets/charts/chart-2.webp" alt="" />
+          </picture>
 
           <img 
-            class="hero__illustration_secondary illustration" 
-            srcset="assets/charts/chart-1.webp,
-                    assets/charts/chart-1@x2.webp 2x"
-            src="assets/charts/chart-1.webp"
+            class="hero__illustration_secondary illustration"
+            src="assets/charts/chart-1@x2.webp"
             alt=""
           />
         </div>
