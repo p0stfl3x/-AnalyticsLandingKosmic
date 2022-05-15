@@ -47,14 +47,14 @@ body {
 }
 
 h1 {
-  font-size: 1.93rem;
+  font-size: 1.9rem;
   line-height: 1.2;
   color: var(--text-color-contrasted);
 }
 
 @media only screen and (max-width: 374px) {
   h1 {
-    font-size: 1.65rem;
+    font-size: 1.55rem;
   }
 }
 
@@ -376,7 +376,7 @@ ul {
 
 @media only screen and (max-width: 374px) {
   .fa-brands {
-    margin: 1.5rem;
+    margin-left: 1.5rem;
   }
 }
 
@@ -421,6 +421,12 @@ ul {
 .paragraph.paragraph_larger {
   font-size: 1.12rem;
   line-height: 1.5;
+}
+
+@media only screen and (max-width: 374px) {
+  .paragraph.paragraph_larger {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (min-width: 560px) {
@@ -515,7 +521,7 @@ ul {
 
 @media only screen and (min-width: 560px) {
   .hero__heading {
-    max-width: 32rem;
+
     font-size: 2.7rem;
     margin: 0 auto 1.2rem;
   }

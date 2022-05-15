@@ -20,7 +20,7 @@
           class="header__logo" 
           width="277"
           height="60"
-          src="assets/logos/header-logo.svg" 
+          src="assets/logos/header-logo.png" 
           alt="" 
         />
 
@@ -39,7 +39,7 @@
 
           <a class="button button_regular header__sign-up" href="">Sign Up</a>
 
-          <a class="button header__menu-button"><i class="fa-solid fa-bars"></i></a>
+          <a class="button header__menu-button" href=""><i class="fa-solid fa-bars"></i></a>
         </div>
       </header>
 
@@ -56,18 +56,46 @@
 
         <div class="hero__illustrations">
           <picture>
-            <source media="(max-width: 599px)" srcset="assets/charts/chart-2.webp" />
-            <source media="(min-width: 600px)" srcset="assets/charts/chart-2@x2.webp" />
-            <img class="hero__illustration_primary illustration" width="804" height="555" src="assets/charts/chart-2.webp" alt="" />
+            <source 
+              media="(max-width: 599px)" 
+              srcset="assets/charts/chart-2.webp"
+              type="image/webp"
+            />
+                    
+            <source 
+              media="(min-width: 600px)" 
+              srcset="assets/charts/chart-2@x2.webp"
+              type="image/webp"
+            />
+            
+            <source 
+              media="(min-width: 600px)" 
+              srcset="assets/charts/chart-2@x2.png"
+            />
+            
+            <img 
+              class="hero__illustration_primary illustration" 
+              width="804" 
+              height="555" 
+              src="assets/charts/chart-2.png"
+              alt="" 
+            />
           </picture>
-
-          <img 
-            class="hero__illustration_secondary illustration"
-            width="722"
-            height="493"
-            src="assets/charts/chart-1@x2.webp"
-            alt=""
-          />
+            
+          <picture>
+             <source
+               srcset="assets/charts/chart-1@x2.webp"
+               type="image/webp"
+             />
+           
+            <img 
+              class="hero__illustration_secondary illustration"
+              width="722"
+              height="493"
+              src="assets/charts/chart-1@x2.png"
+              alt=""
+            />
+          </picture> 
         </div>
       </div>
     </div>
@@ -86,7 +114,7 @@
 
         <div class="features__group">
           <div class="feature">
-            <img class="feature__icon" width="60" height="60" src="assets/icons/planning.svg" alt=""/>
+              <img class="feature__icon" width="60" height="60" src="assets/icons/planning.png" alt=""/>
 
             <div class="feature__text">
               <h3 class="feature__name">Monitoring 24/7</h3>
@@ -98,7 +126,7 @@
           </div>
 
           <div class="feature">
-            <img class="feature__icon" width="60" height="60" src="assets/icons/computer.svg" alt=""/>
+            <img class="feature__icon" width="60" height="60" src="assets/icons/computer.png" alt=""/>
 
             <div class="feature__text">
               <h3 class="feature__name">Widget System</h3>
@@ -110,7 +138,7 @@
           </div>
 
           <div class="feature">
-            <img class="feature__icon" width="60" height="60" src="assets/icons/speed.svg" alt=""/>
+            <img class="feature__icon" width="60" height="60" src="assets/icons/speed.png" alt=""/>
 
             <div class="feature__text">
               <h3 class="feature__name">Best Performance</h3>
@@ -131,16 +159,20 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.
           </p>
         </div>
+        
+        <picture class="illustrated__diagram">
+          <img 
+            class="illustration"
+            width="600"
+            height="410" 
+            srcset="assets/charts/chart-3.webp,
+                    assets/charts/chart-3@x2.webp 2x"
+            src="assets/charts/chart-3.webp" 
+            alt=""
+          />
+        </picture>
 
-        <img 
-          class="illustrated__diagram illustration"
-          width="600"
-          height="410" 
-          srcset="assets/charts/chart-3.webp,
-                  assets/charts/chart-3@x2.webp 2x"
-          src="assets/charts/chart-3.webp" 
-          alt=""
-        />
+          
       </div>
     </div>
   </section> 
@@ -244,7 +276,7 @@
           class="footer__logo" 
           width="277"
           height="60"
-          src="assets/logos/footer-logo.svg" alt="footer logo"
+          src="assets/logos/footer-logo.png" alt="footer logo"
         />
 
         <ul class="navigation footer__navigation">
@@ -255,9 +287,9 @@
         </ul>
         
         <ul class="footer__social-links">
-          <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
-          <li><a><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-facebook-f" href="#"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-twitter" href="#"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-instagram" href="#"></i></a></li>
         </ul>
       </footer>
     </div> 
