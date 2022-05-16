@@ -114,7 +114,7 @@
 
         <div class="features__group">
           <div class="feature">
-              <img class="feature__icon" width="60" height="60" src="assets/icons/planning.png" alt=""/>
+            <img class="feature__icon" width="60" height="60" src="assets/icons/planning.png" alt=""/>
 
             <div class="feature__text">
               <h3 class="feature__name">Monitoring 24/7</h3>
@@ -161,18 +161,31 @@
         </div>
         
         <picture class="illustrated__diagram">
+          <source
+            media="(max-width: 499px)"
+            srcset="assets/charts/chart-3.webp"
+            type="image/webp"
+          />
+          
+          <source
+            media="(min-width: 500px)"
+            srcset="assets/charts/chart-3@x2.webp"
+            type="image/webp"
+          />
+          
+          <source
+            media="(min-width: 500px)"
+            srcset="assets/charts/chart-3@x2.png"
+          />
+          
           <img 
             class="illustration"
             width="600"
             height="410" 
-            srcset="assets/charts/chart-3.webp,
-                    assets/charts/chart-3@x2.webp 2x"
-            src="assets/charts/chart-3.webp" 
+            src="assets/charts/chart-3.png" 
             alt=""
           />
         </picture>
-
-          
       </div>
     </div>
   </section> 
@@ -180,15 +193,32 @@
   <section class="container">
     <div class="container__content">
       <div class="illustrated illustrated_reverse wrapper">
-        <img 
-          class="illustrated__diagram illustration"
-          width="600"
-          height="410" 
-          srcset="assets/charts/chart-4.webp,
-                  assets/charts/chart-4@x2.webp 2x"
-          src="assets/charts/chart-4.webp" 
-          alt=""
-        />
+        <picture class="illustrated__diagram">
+          <source
+            media="(max-width: 499px)"
+            srcset="assets/charts/chart-4.webp"
+            type="image/webp"
+          />
+          
+          <source
+            media="(min-width: 500px)"
+            srcset="assets/charts/chart-4@x2.webp"
+            type="image/webp"
+          />
+          
+          <source
+            media="(min-width: 500px)"
+            srcset="assets/charts/chart-4@x2.png"
+          />
+          
+          <img 
+            class="illustration"
+            width="600"
+            height="410" 
+            src="assets/charts/chart-4.png" 
+            alt=""
+          />
+        </picture>
 
         <div class="illustrated__text">
           <h2 class="illustrated__heading">Fully customizable to<br>address your needs</h2>
@@ -207,16 +237,33 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.
           </p>
         </div>
-
-        <img 
-          class="illustrated__diagram illustration"
-          width="600"
-          height="410" 
-          srcset="assets/charts/chart-5.webp,
-                  assets/charts/chart-5@x2.webp 2x"
-          src="assets/charts/chart-5.webp" 
-          alt=""
-        />
+        
+        <picture class="illustrated__diagram">
+          <source
+            media="(max-width: 499px)"
+            srcset="assets/charts/chart-5.webp"
+            type="image/webp"
+          />
+          
+          <source
+            media="(min-width: 500px)"
+            srcset="assets/charts/chart-5@x2.webp"
+            type="image/webp"
+          />
+          
+          <source
+            media="(min-width: 500px)"
+            srcset="assets/charts/chart-5@x2.png"
+          />
+          
+          <img 
+            class="illustration"
+            width="600"
+            height="410" 
+            src="assets/charts/chart-5.png" 
+            alt=""
+          />
+        </picture>
       </div>
     </div>
   </section>

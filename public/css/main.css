@@ -47,14 +47,14 @@ body {
 }
 
 h1 {
-  font-size: 1.9rem;
+  font-size: 1.95rem;
   line-height: 1.2;
   color: var(--text-color-contrasted);
 }
 
 @media only screen and (max-width: 374px) {
   h1 {
-    font-size: 1.55rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -352,7 +352,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
-  padding: 3rem var(--content-padding-mobile);
+  padding: 3rem 0;
+  margin: 0 var(--content-padding-mobile);
   border-top: 1px solid #2A407C;
 }
 
@@ -382,14 +383,15 @@ ul {
 
 @media only screen and (min-width: 640px) {
   .footer {
-    padding: 2.8rem var(--content-padding-tablets);
+    padding: 2.8rem 0;
+    margin: 0 var(--content-padding-tablets);
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .footer {
-    padding: 4.4rem var(--content-padding-desktop);
-    margin-bottom: 2rem;
+    padding: 4.4rem 0;
+    margin: 0 var(--content-padding-desktop) 2rem;
   }
   
   .footer__logo {
