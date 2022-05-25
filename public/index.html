@@ -13,11 +13,11 @@
 </head>
 
 <body>
-  <div class="container container_angled_bottom">
+  <div class="container container_angled container_bottom">
     <div class="container__content wrapper">
       <header class="header">
         <img 
-          class="logo logo_header" 
+          class="logo" 
           width="277"
           height="60"
           src="assets/logos/header-logo.png" 
@@ -25,7 +25,7 @@
         />
 
         <nav>
-          <ul class="header__navigation">
+          <ul class="navigation header__navigation">
             <li><a class="navigation__item" href="#">Products</a></li>
             
             <li><a class="navigation__item" href="#">Pricing</a></li>
@@ -78,7 +78,7 @@
             />
             
             <img 
-              class="hero__illustration_primary illustration" 
+              class="hero__illustration_underlay illustration" 
               width="804" 
               height="555" 
               src="assets/charts/chart-2.png"
@@ -93,7 +93,7 @@
              />
            
             <img 
-              class="hero__illustration_secondary illustration"
+              class="hero__illustration_overlay illustration"
               width="722"
               height="493"
               src="assets/charts/chart-1@x2.png"
@@ -239,7 +239,7 @@
             />
           </picture>
 
-          <div class="illustrated__text">
+          <div class="illustrated__text llustrated__text_reverse">
             <h2 class="illustrated__heading">Fully customizable to<br>address your needs</h2>
 
             <p class="paragraph illustrated__description">
@@ -288,7 +288,7 @@
     </div>
   </div>
 
-  <div class="container container_angled_top">
+  <div class="container container_angled container_top">
     <div class="container__content wrapper">
       <section class="pricing">
         <div class="pricing__header">
@@ -303,9 +303,11 @@
           <div class="pricing-plan">
             <h3 class="pricing-plan__name">Starter</h3>
 
-            <span class="pricing-plan__users-number">up to 3 users</span>
+            <span class="pricing-plan__additional-info">up to 3 users</span>
 
-            <h4 class="pricing-plan__cost"><small class="pricing-plan__cost-small">$</small>29</h4>
+            <h4 class="pricing-plan__cost">
+              <small class="pricing-plan__currency">$</small>29
+            </h4>
 
             <span class="pricing-plan__period">per month</span>
 
@@ -313,11 +315,13 @@
           </div>
 
           <div class="pricing-plan pricing-plan_promoted">
-            <h3 class="pricing-plan__name">Standard</h3>
+            <h3 class="pricing-plan__name pricing-plan__name_promoted">Standard</h3>
 
-            <span class="pricing-plan__users-number">up to 20 users</span>
+            <span class="pricing-plan__additional-info">up to 20 users</span>
 
-            <h4 class="pricing-plan__cost"><small class="pricing-plan__cost-small">$</small>99</h4>
+            <h4 class="pricing-plan__cost pricing-plan__cost_promoted">
+              <small class="pricing-plan__currency">$</small>99
+            </h4>
 
             <span class="pricing-plan__period">per month</span>
 
@@ -327,9 +331,11 @@
           <div class="pricing-plan">
             <h3 class="pricing-plan__name">Premium</h3>
 
-            <span class="pricing-plan__users-number">up to 200 users</span>
+            <span class="pricing-plan__additional-info">up to 200 users</span>
 
-            <h4 class="pricing-plan__cost"><small class="pricing-plan__cost-small">$</small>299</h4>
+            <h4 class="pricing-plan__cost">
+              <small class="pricing-plan__currency">$</small>299
+            </h4>
 
             <span class="pricing-plan__period">per month</span>
 
@@ -340,7 +346,7 @@
 
       <footer class="footer">
         <img 
-          class="logo logo_footer" 
+          class="logo_small" 
           width="277"
           height="60"
           src="assets/logos/footer-logo.png" alt="footer logo"
@@ -356,12 +362,12 @@
           <li><a class="navigation__item" href="#">Blog</a></li>
         </ul>
         
-        <ul class="footer__social-links">
-          <li><a href=""><i class="fa-brands fa-facebook-f" href="#"></i></a></li>
+        <ul class="social-links">
+          <li><a class="social-links__item" href=""><i class="fa-brands fa-facebook-f" href="#"></i></a></li>
           
-          <li><a href=""><i class="fa-brands fa-twitter" href="#"></i></a></li>
+          <li><a class="social-links__item" href=""><i class="fa-brands fa-twitter" href="#"></i></a></li>
           
-          <li><a href=""><i class="fa-brands fa-instagram" href="#"></i></a></li>
+          <li><a class="social-links__item" href=""><i class="fa-brands fa-instagram" href="#"></i></a></li>
         </ul>
       </footer>
     </div> 
