@@ -4,23 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>Document</title>
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/main.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/10404ee22d.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/10404ee22d.js" crossorigin="anonymous"></script>
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <div class="container container_angled container_bottom">
-    <div class="container__content wrapper">
+    <div class="container__content">
       <header class="header">
         <img 
           class="logo" 
           width="277"
           height="60"
-          src="assets/logos/header-logo.png" 
+          src="assets/logos/header-logo.svg" 
           alt="" 
         />
 
@@ -39,23 +39,25 @@
         </nav>
 
         <div class="header__buttons">
-          <a class="button button_borderless header__sign-in" href="">Sign in</a>
+          <a class="button button_borderless header__sign-in" href="#">Sign in</a>
 
-          <a class="button button_regular header__sign-up" href="">Sign Up</a>
+          <a class="button button_regular header__sign-up" href="#">Sign Up</a>
 
-          <a class="button header__menu-button" href=""><i class="fa-solid fa-bars"></i></a>
+          <a class="button header__menu-button" href="#">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         </div>
       </header>
 
       <section class="hero">
         <div class="hero__text">
-          <h1 class="hero__heading">Monitor your business<br>on real-time dashboard</h1>
+          <h1 class="heading hero__heading">Monitor your business<br>on real-time dashboard</h1>
 
           <p class="paragraph paragraph_larger hero__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est.<span class="hero__description-additional"> Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. </span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est.<span class="u_display-desktop"> Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. </span>
           </p>
 
-          <a class="button button_promoted hero__button" href="">Try for free</a>
+          <a class="button button_promoted hero__button" href="#">Try for free</a>
         </div>
 
         <div class="hero__illustrations">
@@ -78,7 +80,7 @@
             />
             
             <img 
-              class="hero__illustration_underlay illustration" 
+              class="hero__illustration illustration" 
               width="804" 
               height="555" 
               src="assets/charts/chart-2.png"
@@ -106,10 +108,10 @@
   </div>
 
   <div class="container">
-    <div class="container__content wrapper">
+    <div class="container__content">
       <section class="features">
         <div class="features__header">
-          <h2 class="features__heading">Main Features</h2>
+          <h2 class="heading heading_block features__heading">Main Features</h2>
 
           <p class="paragraph features__info">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.
@@ -122,12 +124,12 @@
               class="feature__icon" 
               width="60" 
               height="60" 
-              src="assets/icons/planning.png" 
+              src="assets/icons/planning.svg" 
               alt=""
             />
 
             <div class="feature__text">
-              <h3 class="feature__name">Monitoring 24/7</h3>
+              <h3 class="feature__heading">Monitoring 24/7</h3>
 
               <p class="paragraph paragraph_smaller feature__description">
                 Lorem ipsum dolor sit amet, consectetur adipis cing elit. Elementum nisi aliquet volutpat.
@@ -140,14 +142,14 @@
               class="feature__icon" 
               width="60" 
               height="60" 
-              src="assets/icons/computer.png" 
+              src="assets/icons/computer.svg" 
               alt=""
             />
 
             <div class="feature__text">
-              <h3 class="feature__name">Widget System</h3>
+              <h3 class="feature__heading">Widget System</h3>
 
-              <p class="paragraph paragraph_smaller featur__description">
+              <p class="paragraph paragraph_smaller feature__description">
                 Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar.
               </p>
             </div>
@@ -158,12 +160,12 @@
               class="feature__icon" 
               width="60" 
               height="60" 
-              src="assets/icons/speed.png" 
+              src="assets/icons/speed.svg" 
               alt=""
             />
 
             <div class="feature__text">
-              <h3 class="feature__name">Best Performance</h3>
+              <h3 class="feature__heading">Best Performance</h3>
 
               <p class="paragraph paragraph_smaller feature__description">
                 Lorem ipsum dolor sit amet, consectetur adipis cing elit. Elementum nisi aliquet volutpat.
@@ -176,7 +178,9 @@
       <section>
         <div class="illustrated">
           <div class="illustrated__text">
-            <h2 class="illustrated__heading illustrated__heading_shorter">Automated reports<br>&amp; Widget alerts</h2>
+            <h2 class="heading heading_block illustrated__heading">
+              Automated reports<br>&amp; Widget alerts
+            </h2>
 
             <p class="paragraph illustrated__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.
@@ -239,8 +243,10 @@
             />
           </picture>
 
-          <div class="illustrated__text llustrated__text_reverse">
-            <h2 class="illustrated__heading">Fully customizable to<br>address your needs</h2>
+          <div class="illustrated__text">
+            <h2 class="heading heading_block illustrated__heading">
+              Fully customizable to<br>address your needs
+            </h2>
 
             <p class="paragraph illustrated__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.
@@ -250,7 +256,9 @@
 
         <div class="illustrated illustrated_last">
           <div class="illustrated__text">
-            <h2 class="illustrated__heading">Pre-built Dashboard<br>Templates</h2>
+            <h2 class="heading heading_block illustrated__heading">
+              Pre-built Dashboard<br>Templates
+            </h2>
 
             <p class="paragraph illustrated__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.
@@ -289,10 +297,10 @@
   </div>
 
   <div class="container container_angled container_top">
-    <div class="container__content wrapper">
+    <div class="container__content">
       <section class="pricing">
         <div class="pricing__header">
-          <h2 class="pricing__heading">Pricing Plans</h2>
+          <h2 class="heading heading_block pricing__heading">Pricing Plans</h2>
 
           <p class="paragraph pricing__info">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est.
@@ -311,21 +319,21 @@
 
             <span class="pricing-plan__period">per month</span>
 
-            <a class="button button_regular pricing-plan__button" href="">Order</a>
+            <a class="button button_regular pricing-plan__button" href="#">Order</a>
           </div>
 
           <div class="pricing-plan pricing-plan_promoted">
-            <h3 class="pricing-plan__name pricing-plan__name_promoted">Standard</h3>
+            <h3 class="pricing-plan__name">Standard</h3>
 
             <span class="pricing-plan__additional-info">up to 20 users</span>
 
-            <h4 class="pricing-plan__cost pricing-plan__cost_promoted">
+            <h4 class="pricing-plan__cost">
               <small class="pricing-plan__currency">$</small>99
             </h4>
 
             <span class="pricing-plan__period">per month</span>
 
-            <a class="button button_promoted pricing-plan__button" href="">Order</a>
+            <a class="button button_promoted pricing-plan__button" href="#">Order</a>
           </div>
 
           <div class="pricing-plan">
@@ -339,17 +347,17 @@
 
             <span class="pricing-plan__period">per month</span>
 
-            <a class="button button_regular pricing-plan__button" href="">Order</a>
+            <a class="button button_regular pricing-plan__button" href="#">Order</a>
           </div>
         </div>
       </section>
 
       <footer class="footer">
         <img 
-          class="logo_small" 
+          class="logo logo_small" 
           width="277"
           height="60"
-          src="assets/logos/footer-logo.png" alt="footer logo"
+          src="assets/logos/footer-logo.svg" alt="footer logo"
         />
 
         <ul class="navigation footer__navigation">
@@ -363,11 +371,23 @@
         </ul>
         
         <ul class="social-links">
-          <li><a class="social-links__item" href=""><i class="fa-brands fa-facebook-f" href="#"></i></a></li>
+          <li>
+            <a class="social-links__item" href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
           
-          <li><a class="social-links__item" href=""><i class="fa-brands fa-twitter" href="#"></i></a></li>
+          <li>
+            <a class="social-links__item" href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
           
-          <li><a class="social-links__item" href=""><i class="fa-brands fa-instagram" href="#"></i></a></li>
+          <li>
+            <a class="social-links__item" href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
         </ul>
       </footer>
     </div> 
