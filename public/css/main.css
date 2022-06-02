@@ -11,6 +11,12 @@
   --text-color-primary: rgb(135, 148, 186);
   --text-color-secondary: rgb(23, 39, 85);
   --text-color-contrasted: rgb(255, 255, 255);
+  --border-color-primary: rgb(42, 64, 124);
+  --border-color-secondary: rgb(211, 217, 233);
+  --border-color-shapes: rgb(70, 91, 149);
+  --shadow-color-primary: rgba(25, 42, 89, 0.2);
+  --shadow-color-secondary: rgb(6, 15, 40);
+  --shadow-color-shapes: rgb(18, 33, 77);
   
   --container-width: 1244px;
   --base-deg: -7deg; 
@@ -54,7 +60,7 @@ img {
 a {
   text-decoration: none;
   color: var(--text-color-primary);
-  transition: all 350ms;
+  transition: color 350ms;
 }
 
 a:hover {
@@ -104,14 +110,14 @@ ul {
  * Illustrations
  */
 .illustration {
-  box-shadow: 0 19.2249px 53.4024px -16.0207px rgba(25, 42, 89, 0.2);
+  box-shadow: 0 1.2rem 3.34rem -1rem var(--shadow-color-primary);
 }
 
 /**
  * Headings
  */
 .heading {
-  font-size: 1.6rem;
+  font-size: 1.65rem;
   line-height: 1.2;
   color: var(--text-color-contrasted);
 }
@@ -119,6 +125,16 @@ ul {
 .heading_block {
   font-size: 1.5rem;
   line-height: 1.17;
+}
+
+@media only screen and (min-width: 365px) {
+  .heading {
+    font-size: 1.93rem;
+  }
+  
+  .heading_block {
+    font-size: 1.87rem;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -169,31 +185,18 @@ ul {
 
 }
 
-.button_promoted {
+.button_contrasted {
   color: var(--text-color-contrasted);
   background-color: var(--background-color-contrasted);
 }
 
 .button_regular {
   color: var(--text-color-secondary);
-  border: 1px solid rgb(42, 64, 124);
+  border: 1px solid var(--border-color-primary);
 }
 
 .button_borderless {
   color: var(--text-color-primary);
-}
-
-/**
- * Utility classes
- */
-.u_display-desktop {
-  display: none;
-}
-
-@media only screen and (min-width: 1024px) {
-  .u_display-desktop {
-    display: inline;
-  }
 }
 
 /**
@@ -355,7 +358,7 @@ ul {
   align-items: center;
   margin: 0 calc(var(--content-padding-mobile) * -1) 1.75rem;
   padding: 0.6rem var(--content-padding-mobile);
-  box-shadow: 0 4px 4px rgb(18, 33, 77);
+  box-shadow: 0 4px 4px var(--shadow-color-shapes);
 }
 
 .header__navigation {
@@ -384,12 +387,8 @@ ul {
 
 @media only screen and (min-width: 640px) {
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 0 calc(var(--content-padding-tablets) * -1) 1.75rem;
     padding: 1rem var(--content-padding-tablets);
-    box-shadow: 0 4px 4px rgb(18, 33, 77);
   }
 }
 
@@ -414,7 +413,7 @@ ul {
     min-width: 10rem;
     padding: 0.6rem;
     color: var(--text-color-primary);
-    border: 1px solid rgb(70, 91, 149);
+    border: 1px solid var(--border-color-shapes);
   }
 
   .header__menu-button{
@@ -431,7 +430,7 @@ ul {
   align-items: center;
   font-size: 1.4rem;
   padding: 3rem 0;
-  border-top: 1px solid rgb(42, 64, 124);
+  border-top: 1px solid var(--border-color-primary);
 }
 
 .footer__navigation {
@@ -473,6 +472,7 @@ ul {
 
 .hero__button {
   min-width: 12.9rem;
+  max-width: 25rem;
   margin: 0 auto;
 }
 
@@ -501,7 +501,8 @@ ul {
 
 @media only screen and (min-width: 1024px) {
   .hero {
-    max-height: 25.5rem;
+    min-height: 20rem;
+    margin-bottom: -9.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -792,14 +793,13 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 1;
-  min-width: 17.5rem;
+  min-width: 15rem;
   text-align: center;
   padding: 2.6rem 2.3rem 3.1rem;
   margin: 0 0.6rem;
   background-color: var(--cards-color-light);
   border-radius: var(--border-radius-primary);
-  box-shadow: 0 18px 50px -15px rgb(6, 15, 40);
+  box-shadow: 0 1.12rem 3.13rem -1rem var(--shadow-color-secondary);
 }
 
 .pricing-plan__name {
@@ -819,7 +819,7 @@ ul {
   color: var(--text-color-secondary);
   padding-top: 1.25rem;
   margin: 0 -0.3rem;
-  border-top: 1px solid rgb(211, 217, 233);
+  border-top: 1px solid var(--border-color-secondary);
 }
 
 .pricing-plan__currency {
@@ -830,6 +830,12 @@ ul {
 .pricing-plan__period {
   font-size: 0.81rem;
   margin-bottom: 2.25rem;
+}
+
+@media only screen and (min-width: 365px){
+  .pricing-plan {
+    min-width: 17.5rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -845,7 +851,7 @@ ul {
     max-width: 21.1rem;
     padding: 3.3rem 4.1rem 4.1rem;
     background-color: var(--cards-color-dark);
-    box-shadow: 0 18px 50px -15px rgba(25, 42, 89, 0.2);
+    box-shadow: none;
   }
   
   .pricing-plan__name {
@@ -864,7 +870,7 @@ ul {
     margin: 0 -0.6rem;
     padding-top: 1.7rem;
     color: var(--text-color-contrasted);
-    border-top: 1px solid rgb(42, 64, 124);
+    border-top: 1px solid var(--border-color-primary);
   }
   
   .pricing-plan__period {
@@ -879,7 +885,7 @@ ul {
   
   .pricing-plan_promoted {
     background-color: var(--cards-color-light);
-    box-shadow: 0 18px 50px -15px rgb(6, 15, 40);
+    box-shadow: 0 1.12rem 3.13rem -1rem var(--shadow-color-secondary);
   }
   
   .pricing-plan_promoted .pricing-plan__name {
@@ -888,6 +894,19 @@ ul {
   
   .pricing-plan_promoted .pricing-plan__cost {
     color: var(--text-color-secondary);
-    border-top: 1px solid rgb(211, 217, 233);
+    border-top: 1px solid var(--border-color-secondary);
+  }
+}
+
+/**
+ * Utility classes
+ */
+.u_display-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .u_display-desktop {
+    display: inline;
   }
 }
