@@ -60,7 +60,7 @@ img {
 a {
   text-decoration: none;
   color: var(--text-color-primary);
-  transition: color 350ms;
+  transition: filter 350ms;
 }
 
 a:hover {
@@ -264,7 +264,7 @@ ul {
 }
 
 .container_bottom::before {
-  clip-path: polygon(
+  -webkit-clip-path: polygon(
     0 0, 
     100% 0, 
     100% calc(100% - var(--fluid-cut-height)), 
@@ -273,7 +273,7 @@ ul {
 }
 
 .container_bottom::after {
-  clip-path: polygon(
+  -webkit-clip-path: polygon(
     0 0, 
     100% 0, 
     100% calc(100% - var(--fluid-cut-height) - var(--border-width)), 
@@ -287,7 +287,7 @@ ul {
 }
 
 .container_top::before {
-  clip-path: polygon(
+  -webkit-clip-path: polygon(
     0 var(--fluid-cut-height), 
     100% 0, 
     100% 100%, 
@@ -296,7 +296,7 @@ ul {
 }
 
 .container_top::after {
-  clip-path: polygon(
+  -webkit-clip-path: polygon(
     0 calc(var(--fluid-cut-height) + var(--border-width)), 
     100% var(--border-width), 
     100% 100%, 
