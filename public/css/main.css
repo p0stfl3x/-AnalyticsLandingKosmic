@@ -270,10 +270,24 @@ ul {
     100% calc(100% - var(--fluid-cut-height)), 
     0 100%
   );
+  
+  clip-path: polygon(
+    0 0, 
+    100% 0, 
+    100% calc(100% - var(--fluid-cut-height)), 
+    0 100%
+  );
 }
 
 .container_bottom::after {
   -webkit-clip-path: polygon(
+    0 0, 
+    100% 0, 
+    100% calc(100% - var(--fluid-cut-height) - var(--border-width)), 
+    0 calc(100% - var(--border-width))
+  );
+  
+  clip-path: polygon(
     0 0, 
     100% 0, 
     100% calc(100% - var(--fluid-cut-height) - var(--border-width)), 
@@ -293,10 +307,24 @@ ul {
     100% 100%, 
     0 100%
   );
+  
+  clip-path: polygon(
+    0 var(--fluid-cut-height), 
+    100% 0, 
+    100% 100%, 
+    0 100%
+  );
 }
 
 .container_top::after {
   -webkit-clip-path: polygon(
+    0 calc(var(--fluid-cut-height) + var(--border-width)), 
+    100% var(--border-width), 
+    100% 100%, 
+    0 100%
+  );
+  
+  clip-path: polygon(
     0 calc(var(--fluid-cut-height) + var(--border-width)), 
     100% var(--border-width), 
     100% 100%, 
@@ -502,7 +530,7 @@ ul {
 @media only screen and (min-width: 1024px) {
   .hero {
     min-height: 20rem;
-    margin-bottom: -9.5rem;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -531,18 +559,18 @@ ul {
   }
   
   .hero__illustrations {
-    position: relative;
+    position: absolute;
     max-width: 50%;
     margin: 0 -7rem 0 0;
     z-index: 4;
-    left: 6%;
-  }
-  
+    left: 66%;
+  }  
+
   .hero__illustration {
     margin-bottom: 0;
     max-width: 50rem;
     overflow: hidden;
-  }
+  }  
   
   .hero__illustration_overlay {
     max-width: 23rem;
@@ -556,7 +584,7 @@ ul {
 
 @media only screen and (min-width: 1160px) {
   .hero__illustrations {
-    left: 0;
+    left: 59%;
   }
 }
 
